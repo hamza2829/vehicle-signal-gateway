@@ -1,0 +1,95 @@
+Downloading https://services.gradle.org/distributions/gradle-8.14.4-bin.zip
+.............10%.............20%.............30%.............40%.............50%.............60%.............70%.............80%.............90%..............100%
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.14.4/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :clean
+> Task :checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :processResources
+> Task :processTestResources NO-SOURCE
+> Task :compileKotlin
+> Task :compileJava NO-SOURCE
+> Task :classes
+> Task :jar
+> Task :startScripts
+> Task :distTar
+> Task :distZip
+> Task :assemble
+> Task :installDist
+> Task :compileTestKotlin
+> Task :compileTestJava NO-SOURCE
+> Task :testClasses UP-TO-DATE
+
+> Task :test
+
+ApiTest > malformed json gets clear error() PASSED
+
+ApiTest > health is ok() PASSED
+
+ApiTest > posted signal becomes latest and saves alerts() PASSED
+
+ApiTest > wrong content type rejected() PASSED
+
+ApiTest > websocket streams new alert() PASSED
+
+ApiTest > invalid gps rejected() PASSED
+
+ApiTest > latest is missing before first signal() PASSED
+
+ApiTest > missing fields rejected() PASSED
+
+ApiTest > alerts initially empty() PASSED
+
+ApiTest > out of range battery rejected without saving() PASSED
+
+RepositoryTest > latest updates even without alerts() PASSED
+
+RepositoryTest > history is bounded and keeps newest alerts() PASSED
+
+RepositoryTest > non finite and out of range values are rejected() PASSED
+
+RulesTest > temperature above zero is safe() PASSED
+
+RulesTest > battery above threshold is safe() PASSED
+
+RulesTest > custom speed limit works() PASSED
+
+RulesTest > invalid rule configuration is rejected() PASSED
+
+RulesTest > speed at limit is safe() PASSED
+
+RulesTest > temperature at zero is safe() PASSED
+
+RulesTest > speed above limit alerts() PASSED
+
+RulesTest > alert preserves source signal() PASSED
+
+RulesTest > speed below limit is safe() PASSED
+
+RulesTest > temperature below zero alerts() PASSED
+
+RulesTest > battery at threshold is safe() PASSED
+
+RulesTest > engine returns empty list for safe signal() PASSED
+
+RulesTest > engine returns every matching rule() PASSED
+
+RulesTest > battery below threshold alerts() PASSED
+
+SimulatorTest > flow respects interval and stops with take() PASSED
+
+SimulatorTest > collection is cold and repeatable() PASSED
+
+SimulatorTest > different seeds change sequence() PASSED
+
+SimulatorTest > same seed repeats sequence() PASSED
+
+SimulatorTest > generated values are valid() PASSED
+
+SimulatorTest > zero interval rejected() PASSED
+Tests: 33, passed: 33, failed: 0, skipped: 0
+
+> Task :check
+> Task :build
+
+BUILD SUCCESSFUL in 53s
+10 actionable tasks: 10 executed

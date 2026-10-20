@@ -1,0 +1,9 @@
+GET /health -> 200 {"status":"ok"}
+GET /signals/latest -> 200, simulator is producing signals
+WebSocket /alerts/live -> ready
+POST /signals -> 201, all three rule alerts returned
+WebSocket /alerts/live -> matching manual alert received
+GET /alerts -> 200, manual alerts stored
+POST /signals with battery 101 -> 400 with clear error
+POST /signals with malformed JSON -> 400
+Local HTTP and WebSocket smoke checks PASSED
