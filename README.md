@@ -139,7 +139,7 @@ Java 17. The running service also passed real HTTP and WebSocket checks.
 Actual output and the commands used are in [`verification/`](verification/README.md).
 
 GitHub Actions is configured to build and test on each push and pull request
-with JDK 17. The workflow has not been run on GitHub yet.
+with JDK 17. View the [GitHub Actions results](https://github.com/hamza2829/vehicle-signal-gateway/actions/workflows/ci.yml).
 
 ## Docker
 
